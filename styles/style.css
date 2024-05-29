@@ -36,3 +36,256 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  inline-size: 100%;
+  display: flex;
+  margin: 0 30px;
+  gap: 30px;
+}
+  
+.content__list {
+  position: relative;
+  gap: 10px;
+  height: 298px;
+  overflow: auto;
+  overflow-y: auto;
+  align-self: baseline;
+}
+ 
+.content__list-item:not(:last-child) {
+  margin: 0 0 30px;
+}
+    
+.content__accent {
+  color: #545050;
+}
+  
+.content__video-card-description{
+  text-decoration: none;
+}
+      
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 2px 2px 5px;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none;
+}
+    
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  margin: 1px;
+  color: #fff; 
+}
+ 
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+    
+.content__card-link:focus {
+  outline: none;
+} 
+
+.content__card-link:hover {
+  text-decoration: underline 1px #FFF;
+}
+    
+.content__card-link:focus-visible {
+  outline: 1px solid #FFF;
+}
+  
+.content__video-card {
+  display: flex;
+  align-items: start;
+}
+    
+.content__video-card-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-decoration: none;
+}
+    
+.content__video-card-description {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: inherit;
+  line-height: 16.2px;
+  gap: 6px;
+  border: none;
+  color: #FFFFFF;
+}
+    
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-position: center;
+  object-fit: 50% 50%;
+  margin-left: auto;
+}
+ 
+.result {
+  width: 100%;
+  margin-top: 80px;
+}
+  
+.result__video-container {
+  position: relative;
+  margin-bottom: 16px;
+  width: 711px;
+  height: 386px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.search-form__fieldset {
+  flex-direction: column;
+  border: none;
+}
+  
+.search-form__fieldset-title {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: inherit;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+  
+.search-form__label {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.search-form__label-text {
+  align-items: center;
+  cursor: pointer;
+}
+  
+.search-form__label:has(:focus-visible) {
+  outline-offset: 1px;
+  outline: 1px solid #fff;
+}
+  
+.search-form__label:hover  .search-form__label-text {
+  text-decoration: underline;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+  
+.search-form__textfield {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  width: 224px;
+  color: #fff;
+  background: none;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 2.5px 14px 2.5px 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+  
+.search-form__textfield:active {
+  outline: 1px solid #fff;
+  border: 1px solid #fff;
+}
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form__textfield:focus {
+  outline: 0;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  margin-right: 5px;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  color:#FFFFFF;
+  line-height: 70.5px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+  
+.button {
+  background-color: #1b1919;
+  border: #FFFFFF 1px solid;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 21.6px;
+  padding: 6px 73.5px;
+  cursor: pointer;
+}
+
+.more-button {
+  width: 100%;
+}
+  
+.button:hover {
+  text-decoration: underline;
+}
+  
+.button:focus {
+  outline: none;
+}
+  
+.button:focus-visible {
+  outline-offset: 1px;
+  outline: 1px solid #fff;
+}
+  
+.button:active {
+  background: #545050;
+}
+  
+.search-form__submit-button {
+  align-self: flex-end;
+  width: 195px;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
