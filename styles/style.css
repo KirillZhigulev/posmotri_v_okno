@@ -258,6 +258,9 @@ ol {
   }
   
   .content__video-card-description-container {
+    flex-grow: 1; 
+    flex-basis: 0; 
+    block-size: 107px;
     min-width: 200px;
   }
   
@@ -268,21 +271,20 @@ ol {
     line-height: 100%;
     text-transform: uppercase;
     color: #fff;
-    padding-top: 7px;
+    padding-top: 2px 0px 0px 2px;
     margin-bottom: 4px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    max-width: 200px;
   }
   
   .content__video-card-description {
-  font-family: Fira Sans Condensed, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 16.2px;
-  text-align: left;
-  color: #fff;
+    font-family: 'Fira Sans Condensed',sans-serif; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-size: 18px; 
+    line-height: 90%; 
+    padding: 4px 0 4px 2px;
 }
   
   .content__video-card-thumbnail {
